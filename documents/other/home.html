@@ -1,0 +1,999 @@
+<!-- ॥ ॐ श्री गणेशाय नमः ॥ -->
+<!-- Avi-Sharma.com -->
+<!-- Developed by Avi Sharma -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="documents/pictures/utilicons/a.ico" type="image/x-icon">
+    <title>Avi Sharma</title>
+</head>
+<body>
+  <header class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="user-select: auto;">
+      <a href= "https://avi-sharma.com" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" style="user-select: auto;">
+        <img class="logo_header"src="documents/pictures/utilicons/a.ico" alt="Avi Sharma" style="user-select: auto; width: 60px; height: 60px;">
+        <a href= "https://avi-sharma.com" class="ml-3 text-xl" style="user-select: auto;">Avi Sharma</a>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="user-select: auto;">
+        <a href="#about" class="mr-5 hover:text-gray-900" style="user-select: auto;">About</a>
+        <a href="#achievements" class="mr-5 hover:text-gray-900" style="user-select: auto;">Achievements</a>
+        <a href="#gallery" class="mr-5 hover:text-gray-900" style="user-select: auto;">Gallery</a>
+        <a href="#contact" class="mr-5 hover:text-gray-900" style="user-select: auto;">Contact</a>
+        <div class="dropdown">
+          <a class="dropbtn">More...</a>
+          <div class="dropdown-content">
+            <a href="#avitalks">Avi's Talk with PM</a>
+            <a href="#balmukhi">Buy BalMukhi Ramayana</a>
+            <a href="https://avisharmabs.blogspot.com/2022/02/avis-news-links.html"target="_blank">Avi's Links</a>
+            <a href="#reviews">Reviews</a>
+          </div>
+        <style>
+        .dropbtn {
+          background-color: #ffffff00;
+          color: black;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #ffffff00;}</style>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+          <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="documents/pictures/slideshow/AV.png" style="width:100%">
+          <a href="https://avi-sharma.com"class="text">Avi-Sharma.com</a>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="documents/pictures/slideshow/BK.png" style="width:100%">
+          <a href="#avitalks" class="text">Avi with PM Modi</a>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="documents/pictures/slideshow/CD.png" style="width:100%">
+          <a href="#achievements" class="text">Avi's Awards</a>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <style>
+      * {box-sizing:border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    </style>
+  </section>
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col" style="user-select: auto;">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://mradubhashi.com/wp-content/uploads/2022/01/channels4_profile-2.jpg" style="user-select: auto;">
+      <div class="text-center lg:w-2/3 w-full" style="user-select: auto;">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" style="user-select: auto;">Avi Sharma</h1>
+        <p class="mb-8 leading-relaxed" style="user-select: auto;">Pradhan Mantri Rashtriya Bal Puraskar awardee</p>
+        <p class="mb-8 leading-relaxed" style="user-select: auto;">Wonder Boy of India</p>
+        <div class="flex justify-center" style="user-select: auto;">
+          <a href="#about" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" style="user-select: auto;">About</a>
+          <a href="#achievements"class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" style="user-select: auto;">Achievements</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="about">
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto flex flex-col" style="user-select: auto;">
+      <div class="lg:w-4/6 mx-auto" style="user-select: auto;">
+        <div class="rounded-lg h-64 overflow-hidden" style="user-select: auto;">
+          <img alt="content" class="object-cover object-center h-full w-full" src="documents/pictures/awards/avimodi.png" style="user-select: auto;">
+        </div>
+        <div class="flex flex-col sm:flex-row mt-10" style="user-select: auto;">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8" style="user-select: auto;">
+            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400" style="user-select: auto;">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://www.shethepeople.tv/wp-content/uploads/2022/01/55da4196-80ae-485d-87de-f5835e5be06b-1.jpg" style="user-select: auto;">
+            </div>
+            <div class="flex flex-col items-center text-center justify-center" style="user-select: auto;">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg" style="user-select: auto;">Avi Sharma</h2>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" style="user-select: auto;">
+            <p class="textssss" style="user-select: auto;">The child prodigy from Indore, Avi Sharma with young age of 12, World book of record & India Book of Record Holder Avi is child having IQ 161, more than Albert Einstein & famous as *wonder boy* he is an Author, Motivational Speaker, Youngest Mentor of Vedic maths, Actor & Young coder. 
+
+              As Child artist Avi Sharma performed in many TV shows on several channels & TV commercials.
+              
+              Avi utilized his lockdown (2020) to rewrite Ramayana in Hindi in short and melodious way named BalMukhi Ramayana in 250 Chands for to spread moral values like Respect, Patience, obedience, bravery, honesty.
+              
+              During Lockdown 2021 Avi taught vedic mathematics to more than 150 children from Classes 5 to 12 for free of cost during pandemic with the aim of helping students overcome maths anxiety.
+              
+              Recently Avi has created Alexa like voice assistant Named “MADHAV” to help old and disabled people, in python language of software which he learns from his own. Most importantly He's also teaching coding to many students for free. Avi wants to contribute in digital India mission of our Respected P.M. Modiji.
+              
+              He has also delivered lectures on motivation and management in various college & universities. He is working to inculcate moral values, leadership skills, and motivation among people, especially children Under "Mission Shiksha & Sanskar".
+              
+              Avi Sharma also runs a celebrity talk show online called "Celebrity Corner" in which has interviewed more than 70 people who are doing extraordinary work.
+              
+              Avi won 2 India Book of Records and the World Book of Records, Youth Icon Award 2021, Exclusive World Records, the Pride of India award, omg book of record, National excellence award, 2 international icon award & honour from Indo UK cultural forum.
+               
+              He has bagged 20 gold and 1 silver medal in different Olympiads till date.
+              
+              Hobbies of Avi is to read and write books & mentoring younger generation.
+              </p>
+              <style>
+                @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+                .textssss{
+                font-family: 'Merriweather', serif;
+              color: #000;}
+                </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap" style="user-select: auto;">
+      <div class="flex flex-wrap w-full" style="user-select: auto;">
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6" style="user-select: auto;">
+          <div class="flex relative pb-12" style="user-select: auto;">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center" style="user-select: auto;">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" style="user-select: auto;"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/mic.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Motivational Speaker</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi's a motivational speaker and he gives lecture in universities, corporates and institutions.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12" style="user-select: auto;">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center" style="user-select: auto;">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" style="user-select: auto;"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/pen.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Author</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi penned the abridged version of ramayan in 250 chands called BalMukhi Ramayana.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12" style="user-select: auto;">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center" style="user-select: auto;">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" style="user-select: auto;"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/code.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Programmer</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi's an avid coder and he created Voice assistant, MADHAV for old people which's better than alexa and a mask detector. He made this website by himself too.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12" style="user-select: auto;">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center" style="user-select: auto;">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" style="user-select: auto;"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/act.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Anchor & Actor</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi is a great anchor and host his online show Celebrity Corner. He did many tv serials and commercials as an actor.</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12" style="user-select: auto;">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center" style="user-select: auto;">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none" style="user-select: auto;"></div>
+            </div>
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/founder.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Founder of Mission Shiksha and Sanskar</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi's founder of Mission Shiksha and Sanskar. He teaches people importance of Indian culture to people under this mission</p>
+            </div>
+          </div>
+          <div class="flex relative" style="user-select: auto;">
+            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10" style="user-select: auto;">
+              <img src="documents/pictures/prof/tutor.png">
+            </div>
+            <div class="flex-grow pl-4" style="user-select: auto;">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider" style="user-select: auto;">Mentor of Vedic Maths and Coding</h2>
+              <p class="leading-relaxed" style="user-select: auto;">Avi taught more than 150 students of India, vedic maths and Coding for free.</p>
+            </div>
+          </div>
+        </div>
+        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="documents/pictures/awards/awards.png" alt="step" style="user-select: auto;">
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto" style="user-select: auto;">
+        <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900" style="user-select: auto;">Here's Avi's Resume</h1>
+        <a href="documents/pdf/avi_resume.pdf" download="Avi Sharma's Resume" class="flex-shrink-0 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0" style="user-select: auto;">Download Now!</a>
+      </div>
+    </div>
+  </section>
+</div>
+  <section id="achievements" class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="flex flex-col text-center w-full mb-20" style="user-select: auto;">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="user-select: auto;">Achievements</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="user-select: auto;">Here are awards and achievements of avi</p>
+      </div>
+      <div class="flex flex-wrap -m-2" style="user-select: auto;">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/rbp.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">Pradhan Mantri Rashtiya Bal Puraskar</h2>
+              <p class="text-gray-500" style="user-select: auto;">The highest award of nation for kids won by Avi Sharma in 2022. He also talked to PM Modi sir.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/wbr.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">World Book of Records</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won world book of records for his exceptional Achievements</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/ibr.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">India Book of Records</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won 3 India Book of Records in the age of 9</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/ewr.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">Exclusive World Records</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi got 2 Exclusive World Records for BalMukhi Ramayana and other</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/poi.jpg" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">Pride of India award</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won this by the hands of Bappi Lahiri</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/iia.jpg" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">International Icon Award</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won International Icon Award 2 time in 2021 & 22</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/nea.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">National Excellence Award</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won it at the age of 5 by the hand of Mr. VK Kokje.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/omg.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">OMG Book of Records</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won omg book of records for his spiritual talent</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/yia.jpg" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">Youth Icon Award</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won this by the hands of Mr. Vishwas Sarang, Health-Edu Minister</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full" style="user-select: auto;">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg" style="user-select: auto;">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="documents/pictures/awards/jks.png" style="user-select: auto;">
+            <div class="flex-grow" style="user-select: auto;">
+              <h2 class="text-gray-900 title-font font-medium" style="user-select: auto;">Jazbe ko Salaam</h2>
+              <p class="text-gray-500" style="user-select: auto;">Avi won this award by the hands of Narottam Mishra, Home minister (MP)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap" style="user-select: auto;">
+      <div class="flex w-full mb-20 flex-wrap" style="user-select: auto;">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4" style="user-select: auto;">Gallery</h1>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base" style="user-select: auto;">Gallery of Avi's achievements</p>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im1.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im2.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im3.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im4.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im5.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im6.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im7.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im8.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im9.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im10.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im11.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im12.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im13.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im14.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im15.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im16.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im17.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im18.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im19.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im20.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im21.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im22.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im23.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im24.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im25.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im26.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im27.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im28.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im29.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im30.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im31.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im32.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im33.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im34.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im35.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im36.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im37.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im38.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im39.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im40.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im41.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="flex flex-wrap md:-m-2 -m-1" style="user-select: auto;">
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im42.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im43.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im44.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2" style="user-select: auto;">
+          <div class="md:p-2 p-1 w-full" style="user-select: auto;">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="documents/pictures/gallery/im45.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im46.jpeg" style="user-select: auto;">
+          </div>
+          <div class="md:p-2 p-1 w-1/2" style="user-select: auto;">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="documents/pictures/gallery/im47.jpeg" style="user-select: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="avitalks" style="user-select: auto;">
+    <div class="text-center mb-20" style="user-select: auto;">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4" style="user-select: auto;">Avi's Talk with PM Modi</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s" style="user-select: auto;">Here's Avi's word with PM Modi Sir</p>
+      <div class="flex mt-6 justify-center" style="user-select: auto;">
+        <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex" style="user-select: auto;"></div>
+      </div>
+      <div class="classes"style="text-align: center;">
+      <p align="center"><iframe width="330" height="530" src="https://www.youtube.com/embed/6dQeA4NFPTw" class="ifr" title="Avi'sword with PM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <style>
+        .classes {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;}
+.ifr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+      </style>
+      </div>
+    </div>
+  </section>
+  <section id="balmukhi"class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="text-center mb-20" style="user-select: auto;">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4" style="user-select: auto;">Buy Balmukhi Ramayana</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s" style="user-select: auto;">BalMukhi Ramayana is an abridged version of Ramayana containing 250 verses. you can buy it from here</p>
+        <div class="flex mt-6 justify-center" style="user-select: auto;">
+          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex" style="user-select: auto;"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6" style="user-select: auto;">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center" style="user-select: auto;">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0" style="user-select: auto;">
+            <img src="https://m.media-amazon.com/images/I/51J6cQ63OJL._AC_UL320_.png" alt="Amazon">
+          </div>
+          <div class="flex-grow" style="user-select: auto;">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="user-select: auto;">Amazon</h2>
+            <p class="leading-relaxed text-base" style="user-select: auto;">You can buy BalMukhi Ramayan from Amazon, world's largest ecommerce company. Don't forget to leave your review.</p>
+            <a href="https://www.amazon.in/BALMUKHI-RAMAYAN-HINDI-Avi-Sharma/dp/8194934915/ref=sr_1_3?crid=1EDX2MSX89670&keywords=BalMukhi+Ramayana&qid=1643455169&sprefix=balmiki+ramayana%2Caps%2C194&sr=8-3" target="_blank" class="mt-3 text-blue-500 inline-flex items-center" style="user-select: auto;">Buy now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24" style="user-select: auto;">
+                <path d="M5 12h14M12 5l7 7-7 7" style="user-select: auto;"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center" style="user-select: auto;">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0" style="user-select: auto;">
+            <img src="https://www.medindia.net/health-images/flipkart.jpg" alt=""Flipkart>
+          </div>
+          <div class="flex-grow" style="user-select: auto;">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="user-select: auto;">Flipkart</h2>
+            <p class="leading-relaxed text-base" style="user-select: auto;">Find BalMukhi Ramayana on India's own ecommerce store, Flipkart.</p>
+            <a href="https://www.flipkart.com/balmukhi-ramayan-hindi/p/itm4ff7ba24e76aa?pid=9788194934912&lid=LSTBOK9788194934912ONL8WO&marketplace=FLIPKART&q=BalMukhi+Ramayana&store=bks&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=aabf5b26-6f91-45c2-8317-52829a5bf5c5.9788194934912.SEARCH&ppt=pp&ppn=pp&ssid=xiuylhomuo0000001643455629885&qH=be1db46fd20becf6" target="_blank" class="mt-3 text-blue-500 inline-flex items-center" style="user-select: auto;">Order now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24" style="user-select: auto;">
+                <path d="M5 12h14M12 5l7 7-7 7" style="user-select: auto;"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center" style="user-select: auto;">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0" style="user-select: auto;">
+            <img src="https://mglibrary.org/sites/default/files/migrated/goodreads%20logo.png" alt="Goodreads">
+          </div>
+          <div class="flex-grow" style="user-select: auto;">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="user-select: auto;">Goodreads</h2>
+            <p class="leading-relaxed text-base" style="user-select: auto;">Review BalMukhi Ramayan on famous book reviews site, Goodreads</p>
+            <a href="https://www.goodreads.com/book/show/57357190-balmukhi-ramayan" target="_blank" class="mt-3 text-blue-500 inline-flex items-center" style="user-select: auto;">Review Now
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24" style="user-select: auto;">
+                <path d="M5 12h14M12 5l7 7-7 7" style="user-select: auto;"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews"class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto" style="user-select: auto;">
+      <div class="flex w-full mb-20 flex-wrap" style="user-select: auto;">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4" style="user-select: auto;">Reviews</h1>
+        </div>
+      <div class="flex flex-wrap -m-4" style="user-select: auto;">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/modi.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">कोई भी कार्य करने के लिए कोई उम्र छोटी नहीं होती। अप्प सिर्फ बच्चों के लिए ही नहीं, पूरे देश के लिए प्रेरणा स्त्रोत हैं।</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shri Narendra D. Modi</h2>
+            <p class="text-gray-500" style="user-select: auto;">Prime Minister of India</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/yogi.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">आपने इतनी अल्पायु में बलमुखी रामायण की रचना की। मुझे आशा है की भारत के बच्चे इससे भगवान राम के आदर्श सीखेंगे।</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shri Yogi Adityanath</h2>
+            <p class="text-gray-500" style="user-select: auto;">Cheif Minister, Uttar Pradesh</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/smriti.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">अवि आप ऐसे ही देश की प्रगति में अपना योगदान देते रहिये। आप बहुत अच्छा कार्य कर रहे हैं। </p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shrimati Smriti Z. Irani</h2>
+            <p class="text-gray-500" style="user-select: auto;">Minister of Women and Child Development</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/cm.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">इंदौर के अवि शर्मा से संवाद कर न केवल उनके पौराणिक कथाओं, रामचरितमानस और भगवद्गीता के ज्ञान की सराहना की, अपितु प्रदेश की समस्त विशिष्ट प्रतिभाओं को एक नई प्रेरणा दी है।</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shri Shivraj Singh Chauhan</h2>
+            <p class="text-gray-500" style="user-select: auto;">Cheif Minister, Madhya Pradesh</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/bappi.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">Very good beta. Keep doing good work. You'll achieve great heights with your efforts and be the nation paride.</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shri Bappi Lahiri</h2>
+            <p class="text-gray-500" style="user-select: auto;">Singer and Music Director</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4" style="user-select: auto;">
+          <div class="h-full text-center" style="user-select: auto;">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="documents/pictures/reviews/shankar.png" style="user-select: auto;">
+            <p class="leading-relaxed" style="user-select: auto;">अवि आप एक अद्भुत बालक तथा बहुमुखी प्रतिभा के धनि हैं, आपको भविष्य के लिए बहुत शुभकामनाएं।</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4" style="user-select: auto;"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm" style="user-select: auto;">Shri Shankar Lalwani</h2>
+            <p class="text-gray-500" style="user-select: auto;">Member of Parliament</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" style="user-select: auto;">
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap" style="align-items: center;">
+      <div class="flex w-full mb-20 flex-wrap" style="user-select: auto;">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4" style="user-select: auto;">Contact</h1>
+      </div>
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style="user-select: auto; align-items: center;">
+        <iframe class="absolute inset-0"  width="500px" height="700px" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.3912220031616!2d75.91889361488481!3d22.71369578511036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2ddbb1a4c95%3A0x9e4e84e915b6b587!2sSterling%20Skyline%20Tower%2C%20Bicholi%20Mardana%2C%20Indore%2C%20Madhya%20Pradesh%20452016!5e0!3m2!1sen!2sin!4v1643357667298!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md" style="user-select: auto;">
+          <div class="lg:w-1/2 px-6" style="user-select: auto;">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs" style="user-select: auto;">ADDRESS</h2>
+            <a href="https://www.google.com/maps/place/Sterling+Skyline+Tower,+Bicholi+Mardana,+Indore,+Madhya+Pradesh+452016/@22.7136958,75.9188936,17z/data=!3m1!4b1!4m5!3m4!1s0x3962e2ddbb1a4c95:0x9e4e84e915b6b587!8m2!3d22.7136573!4d75.9211014" target="_blank" class="mt-1" style="user-select: auto; color: #4084f4;">A201 Sterling Skyline, Bicholi Hapsi, Indore (452016)</a>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0" style="user-select: auto;">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs" style="user-select: auto;">EMAIL</h2>
+            <a href="mailto:contact@avi-sharma.com" target="_blank" hrefclass="text-blue-500 leading-relaxed" style="user-select: auto;color: #4084f4;">contact@avi-sharma.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4" style="user-select: auto;">PHONE</h2>
+            <a href="tel:+919826231031" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});" style="user-select: auto;color: #4084f4;">+919826231031</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-gray-600 body-font" style="user-select: auto;">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col" style="user-select: auto;">
+      <a href= "https://avi-sharma.com" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" style="user-select: auto;">
+        <img class="logo_header"src="documents/pictures/utilicons/a.ico" alt="Avi Sharma" style="user-select: auto; width: 60px; height: 60px;">
+        <a href= "https://avi-sharma.com" class="ml-3 text-xl" style="user-select: auto;">Avi Sharma</a>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="text-align:center; user-select: auto;">© 2022 Avi Sharma. All rights reserved | Developed by Avi Sharma.
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start" style="user-select: auto;">
+        <a href="https://facebook.com/avisharmafb" target="_blank"class="text-gray-500" style="user-select: auto;">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" style="user-select: auto;"></path>
+          </svg>
+        <a href="https://instagram.com/avisharmaig"target="_blank" class="ml-3 text-gray-500" style="user-select: auto;">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" style="user-select: auto;">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" style="user-select: auto;"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" style="user-select: auto;"></path>
+          </svg>
+        </a>
+        <a href="https://youtube.com/avisharmayt"target="_blank" class="ml-3 text-gray-500" style="user-select: auto;">
+          <img src="documents/pictures/utilicons/yt.png" width="20" height="20">
+        </a>
+      </span>
+      <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text">Back to top</span>
+      </a>
+      <style>
+        .top-link {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 80px;
+  height: 80px;
+  background-color: #F8F8F8;
+}
+.top-link.show {
+  visibility: visible;
+  opacity: 1;
+}
+.top-link.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+.top-link svg {
+  fill: #000;
+  width: 24px;
+  height: 12px;
+}
+.top-link:hover {
+  background-color: #E8E8E8;
+}
+.top-link:hover svg {
+  fill: #000000;
+}
+
+.screen-reader-text {
+  position: absolute;
+  clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.screen-reader-text:focus {
+  display: block;
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  clip-path: none;
+  background-color: #eee;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  font-size: 1em;
+  clip: auto !important;
+}
+      </style>
+    </div>
+  </footer>
+  <script>
+    mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+const scrollToTopButton = document.getElementById('js-top');
+const scrollFunc = () => {
+  let y = window.scrollY;
+  if (y > 0) {
+    scrollToTopButton.className = "top-link show";
+  } else {
+    scrollToTopButton.className = "top-link hide";
+  }
+};
+window.addEventListener("scroll", scrollFunc);
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 10);
+  }
+};
+scrollToTopButton.onclick = function(e) {
+  e.preventDefault();
+  scrollToTop();
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+  </script>
+</body>
+</html>
+<!-- The End -->
